@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttons">
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">85dp</item>
+        <item name="android:layout_marginTop">10sp</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/shape_button_color_and_corner</item>
+    </style>
+
+    <style name="buttons_landscape">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:layout_marginTop">10sp</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/shape_button_color_and_corner</item>
+    </style>
+
+    <style name="clickable">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="dificul_button" parent="clickable">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">350dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="easy_game_button" parent="clickable">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">20sp</item>
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:layout_marginRight">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#F8F0F0</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:background">@drawable/shape_button_color_and_corner</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <style name="easy_game_button_landscape" parent="clickable">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">20sp</item>
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:layout_marginRight">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#EFE9E9</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:background">@drawable/shape_button_color_and_corner</item>
+        <item name="android:layout_height">90dp</item>
+    </style>
+
+    <style name="hard_button" parent="clickable">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">@drawable/shape_button_color_and_corner</item>
+        <item name="android:textColor">#FAF9F9</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="hard_button_landscape" parent="clickable">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/shape_button_color_and_corner</item>
+        <item name="android:textColor">#F4EFEF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

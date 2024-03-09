@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DifficultActivity2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/appBarColor"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/backDificul"
+            style="@style/clickable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_keyboard_backspace_24" />
+
+
+
+        <ImageView
+            android:id="@+id/diamondDificul"
+            style="@style/clickable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_diamond_24" />
+
+        <ImageView
+            android:id="@+id/helpDificul"
+            style="@style/clickable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_help_outline_24" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/easyButton"
+            style="@style/dificul_button"
+            android:layout_gravity="center|top"
+            android:background="@drawable/start_shape_button"
+            android:text="Easy" />
+
+        <TextView
+            android:id="@+id/normalButton"
+            style="@style/dificul_button"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/start_shape_button"
+            android:text="Normal" />
+
+        <TextView
+            android:id="@+id/hardButton"
+            style="@style/dificul_button"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/start_shape_button"
+            android:text="Hard" />
+
+    </FrameLayout>
+</FrameLayout>

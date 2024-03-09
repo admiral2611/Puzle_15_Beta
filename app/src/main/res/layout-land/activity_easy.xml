@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9F1DF"
+    tools:context=".EasyActivity">
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="centerCrop"
+          android:src="@drawable/img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/appBarColor"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/menuHamburger"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="menu"
+            android:focusable="true"
+            android:src="@drawable/baseline_menu_24" />
+
+        <ImageView
+            android:id="@+id/menuOpen"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="menu"
+            android:focusable="true"
+            android:src="@drawable/baseline_menu_open_24"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="back"
+            android:focusable="true"
+            android:src="@drawable/baseline_undo_24" />
+
+        <TextView
+            android:id="@+id/timeGame"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/replayGame"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="replay"
+            android:focusable="true"
+            android:src="@drawable/baseline_replay_24" />
+
+        <ImageView
+            android:id="@+id/pauseGame"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="pause"
+            android:focusable="true"
+            android:src="@drawable/baseline_motion_paused_24" />
+
+        <ImageView
+            android:id="@+id/playGame"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="pause"
+            android:focusable="true"
+            android:src="@drawable/baseline_play_circle_outline_24" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="50sp">
+
+        <TextView
+            android:id="@+id/button_1n"
+            style="@style/easy_game_button_landscape"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:tag="0:0" />
+
+        <TextView
+            android:id="@+id/button_2n"
+            style="@style/easy_game_button_landscape"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/button_1n"
+            android:tag="0:1" />
+
+        <TextView
+            android:id="@+id/button_3n"
+            style="@style/easy_game_button_landscape"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/button_2n"
+            android:tag="0:2" />
+
+        <TextView
+            android:id="@+id/button_4n"
+            style="@style/easy_game_button_landscape"
+            android:layout_below="@id/button_1n"
+            android:layout_alignParentStart="true"
+            android:tag="1:0" />
+
+        <TextView
+            android:id="@+id/button_5n"
+            style="@style/easy_game_button_landscape"
+            android:layout_below="@id/button_2n"
+            android:layout_toEndOf="@id/button_4n"
+            android:tag="1:1" />
+
+        <TextView
+            android:id="@+id/button_6n"
+            style="@style/easy_game_button_landscape"
+            android:layout_below="@id/button_3n"
+            android:layout_toEndOf="@id/button_5n"
+            android:tag="1:2" />
+
+        <TextView
+            android:id="@+id/button_7"
+            style="@style/easy_game_button_landscape"
+            android:layout_below="@id/button_4n"
+            android:layout_alignParentStart="true"
+            android:tag="2:0" />
+
+        <TextView
+            android:id="@+id/button_8"
+            style="@style/easy_game_button_landscape"
+            android:layout_below="@id/button_5n"
+            android:layout_toEndOf="@id/button_7"
+            android:tag="2:1" />
+
+        <TextView
+            android:id="@+id/button_9"
+            style="@style/easy_game_button_landscape"
+            android:layout_below="@id/button_6n"
+            android:layout_toEndOf="@id/button_8"
+            android:tag="2:2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="70sp"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="320dp"
+            android:background="#83A9F1DF"
+            android:gravity="center"
+            android:text="PAUSE"
+            android:textColor="#000"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!--<FrameLayout
+        android:id="@+id/winUser"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="100sp"
+        android:background="#32A9F1DF">
+
+        <TextView
+            android:id="@+id/winUserText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="180dp"
+            android:text="you win :"
+            android:visibility="invisible"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>-->
+
+    <ImageView
+        android:id="@+id/helpGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:clickable="true"
+        android:contentDescription="Help"
+        android:focusable="true"
+        android:src="@drawable/baseline_live_help_24" />
+</FrameLayout>
