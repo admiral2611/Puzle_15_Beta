@@ -1,5 +1,6 @@
 package com.example.puzle_15_beta;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -8,17 +9,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
-import java.util.Collections;
+
 
 public class NormalActivity extends AppCompatActivity {
 
     private TextView timeGame;
-    private ImageView menuHamburger, menuOpen, backArrow, replayGame, pauseGame, playGame, helpGame;
+    private ImageView menuHamburger, replayGame, pauseGame;
     private RelativeLayout relativeGroup, emptyLayout;
     private final TextView[][] buttons = new TextView[4][4];
     private final ArrayList<String> numbers = new ArrayList<>();
@@ -127,6 +126,7 @@ public class NormalActivity extends AppCompatActivity {
         for (int i = 0; i < 16; i++) {
             buttons[i / 4][i % 4].setOnClickListener(view -> {
                 step = 0;
+
                 TextView button = (TextView) view;
                 String tag = button.getTag().toString();
 
@@ -163,9 +163,9 @@ public class NormalActivity extends AppCompatActivity {
 
     private void checkWin() {
         for (int i = 0; i < 14; i++) {
-            int current = Integer.parseInt(buttons[i / 3][i % 3].getText().toString());
+            int current = Integer.parseInt(buttons[i / 4][i % 4].getText().toString());
             int next;
-            next = Integer.parseInt(buttons[(i + 1) / 3][(i + 1) % 3].getText().toString());
+            next = Integer.parseInt(buttons[(i + 1) / 4][(i + 1) % 4].getText().toString());
 
             if (current > next) {
                 return;
@@ -210,6 +210,7 @@ public class NormalActivity extends AppCompatActivity {
         timeGame.setText(timeFormat);
     }
 
+    @SuppressLint("DefaultLocale")
     private String converter(Integer n) {
         int hour = n / 3600;
         int minute = n % 3600 / 60;
@@ -230,7 +231,7 @@ public class NormalActivity extends AppCompatActivity {
 
     private void loadView() {
         /* winUserText=findViewById(R.id.winUserText);*/
-        helpGame = findViewById(R.id.helpGameNormal);
+       // helpGame = findViewById(R.id.helpGameNormal);
         menuHamburger = findViewById(R.id.menuHamburgerNormal);
         //menuOpen = findViewById(R.id.menuOpen);
         emptyLayout = findViewById(R.id.emptylayoutNormal);
@@ -248,7 +249,7 @@ public class NormalActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
 
-        String[] texts = new String[9];
+        String[] texts = new String[16];
         for (int i = 0; i < 16; i++) {
             TextView child = (TextView) relativeGroup.getChildAt(i);
             String text = child.getText().toString();

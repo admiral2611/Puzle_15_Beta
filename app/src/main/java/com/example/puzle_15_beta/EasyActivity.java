@@ -1,5 +1,6 @@
 package com.example.puzle_15_beta;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -8,10 +9,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -209,6 +208,7 @@ public class EasyActivity extends AppCompatActivity {
         timeGame.setText(timeFormat);
     }
 
+    @SuppressLint("DefaultLocale")
     private String converter(Integer n) {
         int hour = n / 3600;
         int minute = n % 3600 / 60;
