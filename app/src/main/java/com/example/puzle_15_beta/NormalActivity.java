@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
+import java.util.Collections;
 
 
 public class NormalActivity extends AppCompatActivity {
@@ -225,16 +226,15 @@ public class NormalActivity extends AppCompatActivity {
             numbers.add(String.valueOf(i));
         }
 
-        //Collections.shuffle(numbers);
+        Collections.shuffle(numbers);
 
     }
 
     private void loadView() {
         /* winUserText=findViewById(R.id.winUserText);*/
        // helpGame = findViewById(R.id.helpGameNormal);
-        menuHamburger = findViewById(R.id.menuHamburgerNormal);
         //menuOpen = findViewById(R.id.menuOpen);
-        emptyLayout = findViewById(R.id.emptylayoutNormal);
+        emptyLayout = findViewById(R.id.emptyLayoutNormal);
         replayGame = findViewById(R.id.replayGameNormal);
         pauseGame = findViewById(R.id.pauseGameNormal);
         /*playGame = findViewById(R.id.playGame);*/

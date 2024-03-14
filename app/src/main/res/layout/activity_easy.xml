@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EasyActivity">
-      <ImageView
+      <com.flaviofaria.kenburnsview.KenBurnsView
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:scaleType="centerCrop"
@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/appBarColor"
-        android:weightSum="5">
+        android:weightSum="3">
 
-        <ImageView
+        <!--<ImageView
             android:id="@+id/menuHamburger"
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -25,9 +25,9 @@
             android:clickable="true"
             android:contentDescription="menu"
             android:focusable="true"
-            android:src="@drawable/baseline_menu_24" />
+            android:src="@drawable/baseline_menu_24" />-->
 
-        <ImageView
+       <!-- <ImageView
             android:id="@+id/menuOpen"
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -37,9 +37,9 @@
             android:contentDescription="menu"
             android:focusable="true"
             android:src="@drawable/baseline_menu_open_24"
-            android:visibility="gone" />
+            android:visibility="gone" />-->
 
-        <ImageView
+        <!--<ImageView
             android:id="@+id/backArrow"
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -48,7 +48,17 @@
             android:clickable="true"
             android:contentDescription="back"
             android:focusable="true"
-            android:src="@drawable/baseline_undo_24" />
+            android:src="@drawable/baseline_undo_24" />-->
+        <ImageView
+            android:id="@+id/replayGame"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="replay"
+            android:focusable="true"
+            android:src="@drawable/baseline_replay_24" />
 
         <TextView
             android:id="@+id/timeGame"
@@ -61,17 +71,6 @@
             android:textColor="#fff"
             android:textSize="15sp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/replayGame"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10sp"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:contentDescription="replay"
-            android:focusable="true"
-            android:src="@drawable/baseline_replay_24" />
 
         <ImageView
             android:id="@+id/pauseGame"
@@ -180,10 +179,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="400dp"
-            android:background="#83A9F1DF"
+            android:background="#08A9F1DF"
             android:gravity="center"
             android:text="PAUSE"
-            android:textColor="#000"
+            android:textColor="#F3ECEC"
             android:textSize="50sp"
             android:textStyle="bold" />
     </RelativeLayout>

@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DifficultActivity2 extends AppCompatActivity {
-    private ImageView backDifficult, settingDifficult, earthDifficult, diamondDifficult, helpDifficult;
+    private ImageView backDifficult, helpDifficult;
     private TextView btnEasy, btnNormal, btnHard;
 
 
@@ -51,7 +51,6 @@ public class DifficultActivity2 extends AppCompatActivity {
     private void loadDifficult() {
         btnEasy = findViewById(R.id.easyButton);
         btnNormal = findViewById(R.id.normalButton);
-
         btnHard = findViewById(R.id.hardButton);
         backDifficult = findViewById(R.id.backDificul);
         helpDifficult = findViewById(R.id.helpDificul);

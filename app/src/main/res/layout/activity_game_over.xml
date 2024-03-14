@@ -82,8 +82,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
-                    android:text="Easy"
+                    android:layout_marginStart="30dp"
+                    android:text="Time"
                     android:textColor="#fff"
                     android:textSize="35sp"
                     android:textStyle="bold" />
@@ -102,7 +102,7 @@
                     android:textStyle="bold" />
             </FrameLayout>
 
-            <FrameLayout
+         <!--   <FrameLayout
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -131,9 +131,9 @@
                     android:textColor="#fff"
                     android:textSize="25sp"
                     android:textStyle="bold" />
-            </FrameLayout>
+            </FrameLayout>-->
 
-            <FrameLayout
+           <!-- <FrameLayout
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -162,7 +162,7 @@
                     android:textColor="#fff"
                     android:textSize="25sp"
                     android:textStyle="bold" />
-            </FrameLayout>
+            </FrameLayout>-->
 
         </LinearLayout>
     </FrameLayout>

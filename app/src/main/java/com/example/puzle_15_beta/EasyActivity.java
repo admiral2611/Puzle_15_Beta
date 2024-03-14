@@ -111,14 +111,14 @@ public class EasyActivity extends AppCompatActivity {
             timer.cancel();
             loadDataToView();
         });
-        menuHamburger.setOnClickListener(view -> {
+        /*menuHamburger.setOnClickListener(view -> {
             menuHamburger.setVisibility(View.GONE);
             menuOpen.setVisibility(View.VISIBLE);
         });
         menuOpen.setOnClickListener(view -> {
             menuOpen.setVisibility(View.GONE);
             menuHamburger.setVisibility(View.VISIBLE);
-        });
+        });*/
     }
 
     private void loadAction() {
@@ -126,7 +126,7 @@ public class EasyActivity extends AppCompatActivity {
             buttons[i / 3][i % 3].setOnClickListener(view -> {
                 step = 0;
                 TextView button = (TextView) view;
-                String tag = button.getTag().toString();
+                String tag = (String) button.getTag();
 
                 int i1 = Integer.parseInt(tag.split(":")[0]);
                 int j = Integer.parseInt(tag.split(":")[1]);
@@ -231,7 +231,6 @@ public class EasyActivity extends AppCompatActivity {
         /* winUserText=findViewById(R.id.winUserText);*/
         helpGame = findViewById(R.id.helpGame);
         menuHamburger = findViewById(R.id.menuHamburger);
-        menuOpen = findViewById(R.id.menuOpen);
         emptyLayout = findViewById(R.id.emptyLayout);
         replayGame = findViewById(R.id.replayGame);
         pauseGame = findViewById(R.id.pauseGame);

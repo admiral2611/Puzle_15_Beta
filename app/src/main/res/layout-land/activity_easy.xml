@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#A9F1DF"
     tools:context=".EasyActivity">
-      <ImageView
+      <com.flaviofaria.kenburnsview.KenBurnsView
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:scaleType="centerCrop"
@@ -15,9 +15,9 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/appBarColor"
-        android:weightSum="5">
+        android:weightSum="3">
 
-        <ImageView
+       <!-- <ImageView
             android:id="@+id/menuHamburger"
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -49,7 +49,19 @@
             android:clickable="true"
             android:contentDescription="back"
             android:focusable="true"
-            android:src="@drawable/baseline_undo_24" />
+            android:src="@drawable/baseline_undo_24" />-->
+
+        <ImageView
+            android:id="@+id/replayGame"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="replay"
+            android:focusable="true"
+            android:src="@drawable/baseline_replay_24" />
+
 
         <TextView
             android:id="@+id/timeGame"
@@ -62,17 +74,6 @@
             android:textColor="#fff"
             android:textSize="15sp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/replayGame"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10sp"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:contentDescription="replay"
-            android:focusable="true"
-            android:src="@drawable/baseline_replay_24" />
 
         <ImageView
             android:id="@+id/pauseGame"

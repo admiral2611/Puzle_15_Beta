@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".DifficultActivity2">
 
-    <ImageView
+    <com.flaviofaria.kenburnsview.KenBurnsView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/appBarColor"
-        android:weightSum="3">
+        android:weightSum="2">
 
         <ImageView
             android:id="@+id/backDificul"
@@ -29,14 +29,14 @@
 
 
 
-        <ImageView
+      <!--  <ImageView
             android:id="@+id/diamondDificul"
             style="@style/clickable"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/baseline_diamond_24" />
+            android:src="@drawable/baseline_diamond_24" />-->
 
         <ImageView
             android:id="@+id/helpDificul"
